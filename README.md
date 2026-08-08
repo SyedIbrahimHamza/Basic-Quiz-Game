@@ -1,6 +1,6 @@
 # Basic Python Quiz
 
-My first terminal-based quiz game, built while learning Python fundamentals. It lets you choose a difficulty level, answer multiple-choice questions, track your score, and replay the quiz as many times as you want during the session.
+My first terminal-based quiz game, built while learning Python fundamentals. It lets you choose a difficulty level, answer multiple-choice questions, and tracks your score based on your correct answers.
 
 ## What it does
 
@@ -11,10 +11,7 @@ My first terminal-based quiz game, built while learning Python fundamentals. It 
 * Displays the correct answer when you run out of attempts
 * Keeps track of your score throughout the quiz
 * Shows your final score after completing the selected difficulty level
-* Allows you to replay the quiz multiple times
-* Returns to the main menu after each completed quiz
-* Lets you exit the program whenever you choose
-* Validates menu and difficulty-level input so invalid choices don't continue
+* Validates the main menu and difficulty-level input so invalid choices don't continue
 
 ## How to run it
 
@@ -25,7 +22,7 @@ python quiz_game.py
 You'll see a menu:
 
 ```text
-=== BASIC QUIZ ===
+Welcome to the Basic Quiz!
 1. Play Quiz
 2. Exit
 ```
@@ -60,21 +57,18 @@ Enter your answer (A, B, C, D): B
 Correct!
 ```
 
-At the end of the quiz, your final score is displayed:
+At the end, your final score is displayed:
 
 ```text
 Your final score is: 3 out of 3
 ```
-
-After completing the quiz, the main menu appears again, allowing you to play another quiz or exit.
 
 ## What I learned building this
 
 * Storing quiz questions, options, and answers using lists and dictionaries
 * Using `if`, `elif`, and `else` to handle different choices and difficulty levels
 * Using `for` loops to go through multiple questions and answer options
-* Using `while` loops to control attempts and keep the quiz running
-* Using `while True` with `break` to allow the user to replay the quiz until they choose to exit
+* Using `while` loops to control attempts and validate user input
 * Using `.lower()` and `.upper()` to make user input case-insensitive
 * Tracking the player's score with a variable
 * Using `len()` to calculate the total number of questions
